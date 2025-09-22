@@ -1,6 +1,6 @@
 import numpy as np
 
-with open(./rosalind_mrna.txt", "r") as f:
+with open("./rosalind_mrna.txt", "r") as f:
     string = f.read()
 
 
@@ -40,3 +40,4 @@ print(enumuerate_rna(string))
             
 
     
+
