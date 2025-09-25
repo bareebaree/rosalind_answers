@@ -3,8 +3,8 @@ Simple answer to recurrence problem on Rosalind.
 """
 
 # Replace n and k with values from Rosalind.
-n = 30
-k = 3
+n = 0
+k = 0
 
 
 def recursion(n,k):
@@ -16,4 +16,5 @@ def recursion(n,k):
         f.append(result)
         
     return(f[-1]) 
+
 print(recursion(n,k))
