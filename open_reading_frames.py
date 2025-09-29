@@ -2,7 +2,7 @@ from Bio import SeqIO
 from Bio.Seq import Seq
 
 
-record = next(SeqIO.parse("r./rosalind_orf.txt", "fasta"))
+record = next(SeqIO.parse("./rosalind_orf.txt", "fasta"))
 sequence = Seq(str(record.seq))
 
 def parse_orfs(sequence):
@@ -31,6 +31,7 @@ def parse_orfs(sequence):
     proteins.update(scan_strand(sequence.reverse_complement()))
 
     return proteins
+
 
 
 print(parse_orfs(sequence))
